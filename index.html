@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE OF FLOIR</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<!-- Fixed Navigation Bar -->
+<div class="navbar">
+    <div class="logo">
+        <span>HOUSE OF F'LOIR</span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#production">Production</a></li>
+        <li><a href="#creativemarketing">Creative Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Video Section (First Viewport) -->
+<section class="video-section">
+    <video autoplay muted loop>
+        <source src="assets/videos/mainvideojanuary.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="overlay-text">
+            <header>
+                <h1>F'loir</h1>
+                <h2>
+                    <a href="#production">Production House</a> & 
+                    <a href="#creativemarketing">Creative Marketing</a>
+                </h2>
+            </header>
+    </div>
+</section>
+
+ <!-- Slider Section -->
+<section id="clients-slider">
+
+    <!-- Top Row Images -->
+    <div class="slider-container">
+        <div class="slider top-slider">
+            <!-- Repeat your images -->
+            <a href="#client1" class="slide">
+                <img src="assets/images/aureole2.png" alt="Aureole1">
+                <span class="title">Aureole1</span>
+            </a>
+            <a href="#client2" class="slide">
+                <img src="assets/images/Aureole1.png" alt="Client 2">
+                <span class="title">Aureole1 </span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client1" class="slide">
+                <img src="assets/images/aureole1.png" alt="Client 1">
+                <span class="title">Aureole</span>
+            </a>
+            <a href="#client2" class="slide">
+                <img src="assets/images/aureole2.png" alt="Client 2">
+                <span class="title">Aureole</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <!-- Duplicate the same set of images for seamless looping -->
+            <a href="#client1" class="slide">
+                <img src="assets/images/aureole1.png" alt="Client 1">
+                <span class="title">Aureole</span>
+            </a>
+            <a href="#client2" class="slide">
+                <img src="assets/images/aureole2.png" alt="Client 2">
+                <span class="title">Aureole</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+        </div>
+    </div>
+
+    <h2 onclick="scrollToCreativeMarketing()">
+        <span class="large-text">10+</span><br>
+        <span class="small-text">Clients All Over India</span>
+    </h2>
+    
+
+    <!-- Bottom Row Images -->
+    <div class="slider-container">
+        <div class="slider bottom-slider">
+            <!-- Repeat your images for the bottom row -->
+            <a href="#client4" class="slide">
+                <img src="assets/images/khubaniinterior1.png" alt="Client 4">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client5" class="slide">
+                <img src="assets/images/Aureole1.png" alt="Client 5">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client6" class="slide">
+                <img src="assets/images/Delhi.png" alt="Client 6">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client6" class="slide">
+                <img src="assets/images/khubaniinterior2.png" alt="Client 6">
+                <span class="title">Khubani</span>
+            </a>
+            <!-- Duplicate the set of images for looping -->
+            <a href="#client4" class="slide">
+                <img src="assets/images/khubaniinterior1.png" alt="Client 4">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client5" class="slide">
+                <img src="assets/images/Aureole1.png" alt="Client 5">
+                <span class="title">MartinaWu</span>
+            </a>
+            <a href="#client6" class="slide">
+                <img src="assets/images/Delhi.png" alt="Client 6">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client1" class="slide">
+             <img src="assets/images/aureole2.png" alt="Client 1">
+             <span class="title">Aureole</span>
+            </a>
+            <a href="#client6" class="slide">
+                <img src="assets/images/Delhi.png" alt="Client 6">
+                <span class="title">MartinaWU</span>
+          
+            <a href="#client2" class="slide">
+                <img src="assets/images/Aureole1.png" alt="Client 2">
+                <span class="title">Aureole</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client3" class="slide">
+                <img src="assets/images/khubanidocureel.png" alt="Client 3">
+                <span class="title">Khubani</span>
+            </a>
+            <a href="#client1" class="slide">
+                <img src="assets/images/aureole1.png" alt="Client 1">
+                <span class="title">Aureole</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Additional JavaScript for smooth scroll to creative marketing -->
+<script>
+    function scrollToCreativeMarketing() {
+        const element = document.getElementById("creative-projects");
+        element.scrollIntoView({ behavior: "smooth" });
+    }
+</script>
+
+
+</section>
+
+
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At F’loir, we offer a unique combination of creative expertise, technical skill, innovative ideas, unique storytelling, and exceptional execution that sets us apart from other production houses and creative marketing agencies.</p>
+    </section>
+
+    <!-- Team Section -->
+<section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-card">
+            <div class="team-content">
+                <img src="assets/images/Arjun.png" alt="Team Member 1">
+                <div class="team-info">
+                    <h3>Arjun PK</h3>
+                    <p>Founder</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="team-card">
+            <div class="team-content">
+                <img src="assets/images/AanandKrishna.png" alt="Team Member 2">
+                <div class="team-info">
+                    <h3>Aanandkrishna</h3>
+                    <p>Co-Founder</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Member 3 -->
+        <div class="team-card">
+            <div class="team-content">
+                <img src="assets/images/Nicky.png" alt="Team Member 3">
+                <div class="team-info">
+                    <h3>Nicky Renji Abraham</h3>
+                    <p>CEO</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="team-card">
+            <div class="team-content">
+                <img src="assets/images/Anjaly.png" alt="Team Member 4">
+                <div class="team-info">
+                    <h3>Anjaly Jayamon</h3>
+                    <p>Client Service Director</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat the same structure for other team members -->
+    </div>
+</section>
+
+</section>
+
+
+    <!-- Services Section -->
+<section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Advertisements & TVC</h3>
+                <p>We create high-quality, unique, and engaging television commercials tailored to the specific needs of your brand and its target audience. Our TVCs are designed to effectively convey your brand’s message, build awareness, and create a strong connection with your audience.</p>
+            </div>
+            <div class="service">
+                <h3>Digital Marketing</h3>
+                <p>We develop and implement comprehensive digital marketing strategies to effectively reach your target audience. Our approach includes the use of diverse methods, strategic planning, and multiple channels to maximize reach, engagement, and brand visibility.</p>
+            </div>
+            <div class="service">
+                <h3>Social Media Content Production</h3>
+                <p>We craft compelling social media content that aligns with current trends and resonates with your audience. Our content strategies boost your brand’s online presence across platforms, engaging users through Instagram Reels, YouTube videos, and promotional content.</p>
+            </div>
+        </div>
+</section>
+
+    <!-- Creative Projects Section -->
+    <section id="production">
+        <h2>Our Works</h2>
+        <p>We collaborate with brands to deliver unique marketing campaigns...</p>
+    
+        <!-- Horizontal Videos -->
+        <div class="gallery">
+            <div class="video-thumbnail" data-video="assets/videos/January.MP4">
+                <video muted loop>
+                    <source src="assets/videos/January.MP4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <span class="caption">January</span>
+            </div>
+    
+            <div class="video-thumbnail" data-video="assets/videos/Khubanicelebvideofinal.MP4">
+                <video muted loop>
+                    <source src="assets/videos/Khubanicelebvideofinal.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <span class="caption">Celebration</span>
+            </div>
+    
+            <div class="video-thumbnail" data-video="assets/videos/taxidriver.MP4">
+                <video muted loop>
+                    <source src="assets/videos/taxidriver.MP4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <span class="caption">Taxi Driver</span>
+            </div>
+    
+            <div class="video-thumbnail" data-video="assets/videos/delhifinalfinal.MP4">
+                <video muted loop>
+                    <source src="assets/videos/delhifinalfinal.mov" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <span class="caption">Delhi</span>
+            </div>
+        </div>
+    </section>
+    <section id ="creativemarketing">
+        <!-- Vertical Videos -->
+        <div class="reelgallery">
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/BegamTeaser.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/BegamTeaser.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Begam</span>
+            </div>
+    
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/671131795079774647.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/671131795079774647.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Khubani</span>
+            </div>
+    
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/AureoleFloirpost.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/AureoleFloirpost.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Aureole</span>
+            </div>
+    
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/SANTAFINAL.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/SANTAFINAL.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Khubani</span>
+            </div>
+    
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/RedoFloirPostFinal.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/RedoFloirPostFinal.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Redo</span>
+            </div>
+    
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/Harsh PalawatxZoyleeReel.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/Harsh PalawatxZoyleeReel.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Zoylee</span>
+            </div>
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/SundayBrunchGenericAd.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/SundayBrunchGenericAd.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Brunch</span>
+            </div>
+            <div class="video-thumbnail-vertical" data-video="assets/videos/Marketingworks/IMG_1626.MP4">
+                <video autoplay muted loop>
+                    <source src="assets/videos/Marketingworks/IMG_1626.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="reelcaption">Khubani</span>
+            </div>
+        </div>
+    
+        <!-- Video Modal -->
+        <div id="video-modal" class="modal">
+            <span class="close">&times;</span>
+            <video id="modal-video" controls>
+                <source src="" type="video/mp4" /> <!-- Source will be dynamically updated -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    
+    
+
+    <!-- Contact Section -->
+     <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for your next big project.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/le.floir/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/instagram-icon.png" alt="Instagram Icon" />
+            </a>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 F'loir. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=The+Seasons:wght@400;700&display=swap" rel="stylesheet"> -->

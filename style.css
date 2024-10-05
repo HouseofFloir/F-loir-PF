@@ -1,0 +1,604 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 10;
+    border-radius: 25px;
+}
+
+/* Logo Styling */
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Video Section */
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.overlay-text h1 {
+    font-size: 5em;
+}
+
+/* Normal Content Sections */
+section {
+    padding: 100px 20px;
+    background: #f4f4f4;
+    min-height: 100vh;
+}
+
+section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional darkening */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'The Seasons', serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+h2 a:hover {
+    color: #32302f;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #555;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #32302f;
+}
+
+/* Clients Slider Section */
+#clients-slider {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Slider container for both top and bottom rows */
+.slider-container {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0; /* Space around the images */
+}
+
+.slider {
+    display: flex;
+    justify-content: center; /* Align images horizontally */
+    gap: 20px;
+    animation: slide 20s linear infinite; /* Animation for continuous scrolling */
+}
+
+.slide {
+    min-width: 300px; /* Ensure all images are rectangular in both rows */
+    height: 180px; /* Ensure consistent height for all images */
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.slider.top-slider {
+    animation-direction: normal; /* Move left to right */
+}
+
+.slider.bottom-slider {
+    animation-direction: reverse; /* Move right to left */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures rectangular shape without distortion */
+    border-radius: 10px;
+}
+
+.slide .title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    display: none;
+}
+
+.slide:hover .title {
+    display: block;
+}
+
+.slide:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effect for clickable h2 */
+#clients-slider a {
+    text-decoration: none;
+}
+
+#clients-slider h2 {
+    font-size: 36px;
+    margin: 20px 0;
+    font-weight: 700;
+    padding: 60px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#clients-slider h2:hover {
+    color: #8f8f90;
+}
+
+.large-text {
+    font-size: 40px; /* Adjust the size for "10+" */
+}
+
+.small-text {
+    font-size: 24px; /* Adjust the size for "Clients All Over India" */
+}
+
+/* Keyframes for continuous sliding animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Adjust for better control */
+}
+
+/* Team Section */
+#team {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    width: 22%; /* Adjust the width if necessary */
+    height: 350px; /* Adjust height for uniformity */
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.team-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures uniform sizing */
+    display: block;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.team-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #32302f; /* Card background color on hover */
+    color: white; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-family: serif;
+}
+
+.team-info p {
+    font-size: 16px;
+    font-family: serif;
+}
+
+/* Hover effect */
+.team-card:hover .team-info {
+    opacity: 1; /* Show the text on hover */
+}
+
+.team-card:hover img {
+    opacity: 0; /* Hide the image on hover */
+}
+
+.social-links img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    display: inline-block;
+    margin: 2%;
+}
+
+/* Basic styling for the section */
+#services {
+    font-family: 'YourFontHere', sans-serif; /* Replace with the actual font name */
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+#services h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 40px; /* Space between columns */
+    align-items: start;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 25px;
+    position: relative;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.service h3::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: black;
+}
+
+.service p {
+    font-size: 20px; /* Adjust size for paragraph text */
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #32302f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #32302f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ccc;
+}
+
+/* Section General Styling */
+#Works {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#Works h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#Works p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Horizontal Video Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between videos */
+    margin-bottom: 50px;
+    padding: 0 20px; /* Add padding to the gallery */
+}
+
+.video-thumbnail {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video-thumbnail:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.video-thumbnail video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Vertical Video Gallery (Reel Style) */
+.reelgallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for reels */
+    gap: 20px; /* Space between vertical videos */
+    padding: 0 20px;
+}
+
+.video-thumbnail-vertical {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 400px; /* Adjust the height for vertical videos */
+}
+
+.video-thumbnail-vertical:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.video-thumbnail-vertical video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reelcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Modal Video Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+}
+
+.modal video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
